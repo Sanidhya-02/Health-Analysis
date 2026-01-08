@@ -1,0 +1,225 @@
+/* =====================
+   GLOBAL RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f7fb;
+  color: #333;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+nav {
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+nav h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+}
+
+nav button {
+  padding: 7px 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: #22c55e;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #16a34a;
+}
+
+/* =====================
+   MAIN LAYOUT
+===================== */
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* =====================
+   FORM CARD
+===================== */
+.analysisForm {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  width: 50%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.analysisForm h1 {
+  margin-bottom: 20px;
+  color: #1e40af;
+}
+
+.analysisForm div {
+  margin-bottom: 14px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 220px;
+  padding: 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.analysisForm button {
+  margin-top: 10px;
+  padding: 10px 18px;
+  background-color: #2563eb;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.analysisForm button:hover {
+  background-color: #1e40af;
+}
+
+/* =====================
+   REPORT SECTION
+===================== */
+h2 {
+  margin-top: 25px;
+  color: #1e40af;
+}
+
+#report {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f1f5f9;
+  border-radius: 6px;
+  line-height: 1.6;
+}
+
+/* =====================
+   SEARCH RESULT CARD
+===================== */
+.searchCondition {
+  width: 50%;
+}
+
+#result {
+  background-color: #fff;
+  min-height: 420px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+#result h2 {
+  color: #1e40af;
+}
+
+#result img {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+#result p {
+  line-height: 1.5;
+}
+/* =====================
+   RESPONSIVE DESIGN       
+===================== */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .analysisForm,
+    .searchCondition {
+        width: 100%;
+    }
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background-color: #1e40af;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+footer p {
+  margin: 0;
+}
+footer a {
+  color: #22c55e;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+ 
